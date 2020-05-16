@@ -1,7 +1,7 @@
-$bg-color: #579C87;
-$text-color: #fdcb46;
-$menu1-bg-color: #fcdfdb;
-$menu2-bg-color: #fff5fe;
-$menu3-bg-color: #f9f9f9;
-$menu4-bg-color: #fdfffd;
+$bg-color: (gen:#579C87,
+    menu1:#fcdfdb,
+    menu2:#fff5fe,
+    menu3:#f9f9f9,
+    menu4: #fdfffd);
+$text-color: (gen:#fdcb46, menu1:#3d1319);
 $box-shadow-color: #fdfffd;

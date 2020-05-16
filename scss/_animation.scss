@@ -4,8 +4,7 @@
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    display: inline-block;
-    background-color: $text-color;
+    background-color: map-get($text-color, gen);
     margin-right: 5px;
     animation: points infinite 2000ms ease-in-out both;
     opacity: 1;
