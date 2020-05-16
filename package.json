@@ -1,11 +1,21 @@
 {
   "name": "projet-3",
   "version": "1.0.0",
-  "description": "Projet 3",
+  "description": "Projet 3 - menus",
   "main": "index.js",
   "scripts": {
-        "sass":"sass --watch ./sass/main.scss:./css/style.css --style compressed" 
-       },
+    "sass": "sass --watch ./scss/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexrothen/projet3.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexrothen/projet3/issues"
+  },
+  "homepage": "https://github.com/alexrothen/projet3#readme",
+  "browserslist": "last 4 versions"
 }

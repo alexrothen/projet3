@@ -1,0 +1,32 @@
+
+
+[class*=pt]{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: $text-color;
+    margin-right: 5px;
+    animation: points infinite 2000ms ease-in-out both;
+    opacity: 1;
+}
+.pt1{
+    animation-delay: 250ms;
+}
+.pt2{
+    animation-delay: 500ms;
+}
+.pt3{
+    animation-delay: 750ms;
+}
+@keyframes points{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }    
+}
+
