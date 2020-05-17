@@ -5,12 +5,13 @@
     width: 10px;
     height: 10px;
     background-color: map-get($text-color, gen);
-    margin-right: 5px;
+    margin-right: 10px;
     animation: points infinite 2000ms ease-in-out both;
     opacity: 1;
 }
 .pt1{
     animation-delay: 250ms;
+    margin-left: 10px;
 }
 .pt2{
     animation-delay: 500ms;
