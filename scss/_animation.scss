@@ -1,11 +1,14 @@
-
-
+@keyframes points{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }    
+}
 [class*=pt]{
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: map-get($text-color, gen);
-    margin-right: 10px;
     animation: points infinite 2000ms ease-in-out both;
     opacity: 1;
 }
@@ -19,14 +22,5 @@
 .pt3{
     animation-delay: 750ms;
 }
-@keyframes points{
-    0%{
-        opacity: 1;
-        transform: scale(1);
-    }
-    100%{
-        transform: scale(0);
-        opacity: 0;
-    }    
-}
+
 

@@ -1,12 +1,33 @@
-header{
-    display: flex;
-    background-color: map-get($bg-color, gen);
-    height: 240px;
-    h1{
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    main {
+        overflow-x: hidden;
         margin: auto;
-        color: map-get($text-color, gen);
-        font-size: 5rem;
-        font-family: 'Work Sans', sans-serif;
-        letter-spacing: -0.4rem;
+        font-family: map-get($font-family,gen);
+
+        header {
+            display: flex;
+            background-color: map-get($bg-color, gen);
+            height: 240px;
+        }
+
+        .menu {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer {
+            height: 140px;
+            background-color: map-get($bg-color, gen);
+            color: map-get($text-color, gen);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
     }
-}    
+}

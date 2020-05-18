@@ -1,7 +1,18 @@
-$bg-color: (gen:#579C87,
+$bg-color: (
+    gen:#579C87,
     menu1:#fcdfdb,
     menu2:#fff5fe,
     menu3:#f9f9f9,
-    menu4: #fdfffd);
-$text-color: (gen:#fdcb46, menu1:#3d1319);
+    menu4: #fdfffd
+    );
+$text-color: (gen:darken(#fdcb46,5%), menu1:#3d1319);
 $box-shadow-color: #fdfffd;
+$font-size:(
+    h1:7rem,
+    h2:3.2rem,
+    h3:2.8rem,
+    menuTitre:2.5rem
+);
+$font-family:(
+    gen: 'Work Sans',
+    menu1: 'Devonshire',);

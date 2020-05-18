@@ -1,155 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
-
-body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    main {
-        overflow-x: hidden;
-        margin: auto;
-        max-height: 2400px;
-        font-family: 'Work Sans', sans-serif;
-
-    }
-}
-
-header,
-main,
-footer {
-    width: 100vw;
-}
-
-header {
-    display: flex;
-    background-color: map-get($bg-color, gen);
-    height: 240px;
-
-    h1 {
-        margin: auto;
-        color: map-get($text-color, gen);
-        font-size: 7rem;
-        font-family: 'Work Sans', sans-serif;
-        letter-spacing: -0.4rem;
-        font-weight: 600;
-
-    }
-}
-
-.menu {
-    display: flex;
-    margin: 0;
-    padding: 0;
-
-    .blocMenu {
-        display: grid;
-        width: 85vw;
-        margin: auto;
-        height: 2000Px;
-        align-content: space-evenly;
-        justify-items: center;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "menu1 menu2"
-            "menu3 menu4"
-            "prochainement prochainement"
-        ;
-
-        [class*=menu] {
-            width: 540px;
-            height: 755px;
-            box-shadow: 0 0 25px lighten(grey, 25%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-
-            >* {
-                font-size: 2.5rem;
-                font-weight: 400;
-
-            }
-        }
-
-        .prochainement {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 40vw;
-            height: 100px;
-            background-color: map-get($bg-color, gen);
-            border-radius: 25px;
-            grid-area: prochainement;
-
-            .points {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: baseline;
-
-                h2 {
-                    display: block;
-                    color: map-get($text-color, gen);
-                    font-size: 3.5rem;
-                    font-weight: 400;
-                    width: fit-content;
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
 
 
 
-                }
 
-            }
-        }
-    }
-}
-
-footer {
-    height: 140px;
-    background-color: map-get($bg-color, gen);
+header h1 {
+    margin: auto;
     color: map-get($text-color, gen);
-    display: grid;
-    justify-items: start;
-    gap: 40vw;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "mentions contact";
+    font-size: 5rem;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: -0.4rem;
+}
 
-    h2 {
-        display: inline-block;
-        margin: auto;
-        font-size: 2.5rem;
+.blocMenu {
+    display: grid;
+    width: 85vw;
+    margin: auto;
+    height: 1750Px;
+    align-content: space-evenly;
+    justify-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "menu1 menu2"
+        "menu3 menu4";
+
+    >* {
+        width: 85%;
+        max-width: 540px;
+        height: 755px;
+        box-shadow: 0 0 25px lighten(grey, 25%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: map-get($font-size, menuTitre);
         font-weight: 400;
     }
 
+    .menu1 {
+        background-color: map-get($bg-color, menu1);
+        font-family: map-get($font-family, menu1);
+        grid-area: menu1;
+    }
+
+    .menu2 {
+        background-color: map-get($bg-color, menu2);
+        grid-area: menu2;
+
+    }
+
+    .menu3 {
+        background-color: map-get($bg-color, menu3);
+        grid-area: menu3;
+    }
+
+    .menu4 {
+        background-color: map-get($bg-color, menu4);
+        grid-area: menu4;
+    }
 }
 
-.menu1 {
-    background-color: map-get($bg-color, menu1);
-    grid-area: menu1;
+
+.prochainement {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: start;
+    height: 180px;
+
+    .blocProch {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color: map-get($bg-color, gen);
+        border-radius: 25px;
+
+
+        .points {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: baseline;
+
+
+            h2 {
+                display: inline-block;
+                color: map-get($text-color, gen);
+                font-size: map-get($font-size, h2);
+                font-weight: 400;
+                width: fit-content;
+                overflow-x: none;
+            }
+
+            [class*=pt] {
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                background-color: map-get($text-color, gen);
+                margin-right: 10px;
+            }
+
+        }
+    }
 }
 
-.menu2 {
-    background-color: map-get($bg-color, menu2);
-    grid-area: menu2;
 
-}
+footer {
+    h3 {
+        font-size: map-get($font-size, h3);
+        font-weight: 400;
 
-.menu3 {
-    background-color: map-get($bg-color, menu3);
-    grid-area: menu3;
-}
+    }
 
-.menu4 {
-    background-color: map-get($bg-color, menu4);
-    grid-area: menu4;
-}
+    .mentions {
+        margin-left: 2%;
+    }
 
-.mentions {
-    grid-area: mentions;
-}
-
-.contact {
-    grid-area: contact;
+    .contact {
+        margin-right: 2%;
+    }
 }
