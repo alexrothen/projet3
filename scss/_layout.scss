@@ -7,12 +7,10 @@ body {
     main {
         overflow-x: hidden;
         margin: auto;
-        font-family: map-get($font-family,gen);
+        font-family: map-get($font-family, gen);
 
         header {
-            display: flex;
-            background-color: map-get($bg-color, gen);
-            height: 240px;
+            @include header;
         }
 
         .menu {
@@ -22,12 +20,7 @@ body {
         }
 
         footer {
-            height: 140px;
-            background-color: map-get($bg-color, gen);
-            color: map-get($text-color, gen);
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: nowrap;
+            @include footer;
         }
     }
 }

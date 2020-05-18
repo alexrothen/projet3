@@ -5,7 +5,11 @@ $bg-color: (
     menu3:#f9f9f9,
     menu4: #fdfffd
     );
-$text-color: (gen:darken(#fdcb46,5%), menu1:#3d1319);
+$text-color:(
+    gen:darken(#fdcb46,5%), 
+    menu1:#3d1319,
+    menu2: #c77412,
+    );
 $box-shadow-color: #fdfffd;
 $font-size:(
     h1:7rem,
@@ -16,3 +20,6 @@ $font-size:(
 $font-family:(
     gen: 'Work Sans',
     menu1: 'Devonshire',);
+$bg-text:(
+    menu2: radial-gradient(ellipse at top left,#c77412 10%,#9861ef 80% )
+)
