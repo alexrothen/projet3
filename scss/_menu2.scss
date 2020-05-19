@@ -1,9 +1,16 @@
-main{
-    @include legende;
+
        
 
     .menuPage__menu2 {
         @include menuPage(menu2);
+        .blocTitre{
+       
+        h2{  
+            @include radient(menu2);
+            font-size: 3.8rem;
+
+        }
+    }
 
         .entree__menu2{
             color: map-get($text-color,entree__menu2);
@@ -17,11 +24,6 @@ main{
             color: map-get($text-color,dessert__menu2);
 
 
-        }
-
-        h2{
-            font-size: 4rem;
-            @include radient(menu2);
         }
 
         h3 {
@@ -39,4 +41,3 @@ main{
        
 
     }
-}
