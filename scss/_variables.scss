@@ -1,7 +1,7 @@
 $bg-color: (gen:#579C87,
     menu1:#fcdfdb,
     menu2:#fff5fe,
-     menu3:#f9f9f9,
+    menu3:#f9f9f9,
     menu4: #fdfffd);
 
 $text-color:(gen:darken(#fdcb46, 5%),
@@ -9,6 +9,10 @@ $text-color:(gen:darken(#fdcb46, 5%),
     menu2: #c77412,
     menu3: #0887fb, 
     menu4:#72bf56,
+    entree__menu2:#c67412,
+    plat__menu2:#a56799,
+    dessert__menu2:#6e4ccc,
+
 );
 
 $box-shadow-color: #fdfffd;
@@ -32,7 +36,7 @@ $font-family:(gen: 'Work Sans',
     );
 
 $radient-text:(menu1: radial-gradient(circle at bottom right, #f05261, #f6916a),
-    menu2: radial-gradient(ellipse at top left, #c77412 10%, #9861ef 80%),
+    menu2: radial-gradient(circle at top left, #c77412, #9861ef 70%),
     menu3: radial-gradient(circle at bottom left,#0431df,#0887fb 60%), 
     menu4: radial-gradient(circle at bottom right, #bfff7e 30%,#42973c)
     )
