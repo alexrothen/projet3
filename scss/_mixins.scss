@@ -1,3 +1,4 @@
+
 @mixin menu($menu) {
     background-color: map-get($bg-color, $menu);
     grid-area: $menu;
@@ -53,19 +54,28 @@
 }
 
 @mixin footer {
-    height: 120px;
+    height: 100px;
     background-color: map-get($bg-color, gen);
     color: map-get($text-color, gen);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: nowrap;
     position: fixed;
     bottom: 0;
     width: 100vw;
 
-    h3 {
-        font-size: map-get($font-size, footer);
-        font-weight: 400;
+    a:hover{
+        animation: wiggle 300ms infinite;}
+    a{
+        display: block;
+        text-decoration: none;
+        h3{
+            font-size: map-get($font-size, footer);
+            font-weight: 400;
+            color: map-get($text-color, gen);
+
+        }
     }
 
     .mentions {
@@ -75,4 +85,19 @@
     .contact {
         margin-right: 2%;
     }
+}
+@mixin menuPage($menu) {
+    color: map-get($text-color, $menu);
+    background-color: map-get($bg-color, $menu);
+    box-shadow: 0 0 25px lighten(grey, 25%);
+    width: 75vw;
+    height: 1900px;
+    margin: auto auto 15% auto;
+    padding: 4%;
+}
+@mixin note {
+    width: 10%;
+    height: 10%;
+    min-width: 60px;
+    min-height: 60px;   
 }

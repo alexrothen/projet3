@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@keyframes points {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+[class*=pt] {
+  animation: points infinite 2000ms ease-in-out both;
+  opacity: 1;
+}
+
+.pt1 {
+  animation-delay: 250ms;
+  margin-left: 10px;
+}
+
+.pt2 {
+  animation-delay: 500ms;
+}
+
+.pt3 {
+  animation-delay: 750ms;
+}
+
+@keyframes menu {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+a
+:hover {
+  animation: menu 300ms 50ms ease-in-out both;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 2300px;
+}
+
+body main {
+  overflow-x: hidden;
+  margin: auto;
+  font-family: "Work Sans";
+}
+
+body main header {
+  display: flex;
+  background-color: #579C87;
+  height: 240px;
+}
+
+body main header h1 {
+  margin: auto;
+  color: #fdc42d;
+  font-size: 6.5rem;
+  font-family: "Work Sans";
+  letter-spacing: -0.4rem;
+}
+
+body main .menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+body main footer {
+  height: 120px;
+  background-color: #579C87;
+  color: #fdc42d;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+body main footer h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+body main footer .mentions {
+  margin-left: 2%;
+}
+
+body main footer .contact {
+  margin-right: 2%;
+}
+
+.blocMenu {
+  display: grid;
+  width: 85vw;
+  margin: auto;
+  height: 1750Px;
+  align-content: space-evenly;
+  justify-items: center;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "menu1 menu2" "menu3 menu4";
+}
+
+.blocMenu a {
+  display: block;
+  text-decoration: none;
+}
+
+.blocMenu .menu1 {
+  background-color: #fcdfdb;
+  grid-area: menu1;
+  width: 85%;
+  max-width: 540px;
+  height: 755px;
+  box-shadow: 0 0 25px silver;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-family: "Devonshire";
+  color: #3d1319;
+}
+
+.blocMenu .menu1 img, .blocMenu .menu1 p {
+  margin: 0;
+}
+
+.blocMenu .menu1 h3 {
+  font-family: "Kalam";
+  font-size: lighter;
+}
+
+.blocMenu .menu1 img {
+  width: 10%;
+  height: 10%;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.blocMenu .menu2 {
+  background-color: #fff5fe;
+  grid-area: menu2;
+  width: 85%;
+  max-width: 540px;
+  height: 755px;
+  box-shadow: 0 0 25px silver;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-family: "Croissant One";
+  color: #c77412;
+}
+
+.blocMenu .menu2 p {
+  background: radial-gradient(ellipse at top left, #c77412 10%, #9861ef 80%);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-size: calc(map-get($font-size,menu)80%);
+}
+
+.blocMenu .menu2 h3 {
+  font-family: "Segoe UI";
+  font-size: calc(map-get($font-size,menu)130%);
+}
+
+.blocMenu .menu3 {
+  background-color: #f9f9f9;
+  grid-area: menu3;
+  width: 85%;
+  max-width: 540px;
+  height: 755px;
+  box-shadow: 0 0 25px silver;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-family: "Dancing Script";
+  color: #0887fb;
+}
+
+.blocMenu .menu3 p {
+  background: radial-gradient(circle at bottom left, #0431df, #0887fb 60%);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.blocMenu .menu3 h3 {
+  font-family: "Bad Script";
+}
+
+.blocMenu .menu4 {
+  background-color: #fdfffd;
+  grid-area: menu4;
+  width: 85%;
+  max-width: 540px;
+  height: 755px;
+  box-shadow: 0 0 25px silver;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-family: "Kaushan Script";
+  color: #72bf56;
+}
+
+.blocMenu .menu4 p {
+  background: radial-gradient(circle at bottom right, #bfff7e 30%, #42973c);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.blocMenu .menu4 h3 {
+  font-family: "Bad Script";
+}
+
+.prochainement {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: start;
+  height: 180px;
+}
+
+.prochainement .blocProch {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  min-width: 480px;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #579C87;
+  border-radius: 15px;
+}
+
+.prochainement .blocProch .points {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.prochainement .blocProch .points h2 {
+  color: #fdc42d;
+  font-size: 2.8rem;
+  font-weight: 400;
+  width: fit-content;
+}
+
+.prochainement .blocProch .points [class*=pt] {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #fdc42d;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=main.css.map */
