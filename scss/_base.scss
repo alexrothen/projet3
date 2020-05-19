@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 .blocMenu {
     display: grid;
@@ -13,9 +17,26 @@
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "menu1 menu2"
         "menu3 menu4";
-
+   a{
+       display: block;
+       text-decoration: none;
+   }
     .menu1 {
-        @include menu(menu1);
+        img, p{
+            margin: 0;
+        }
+        h3{
+            font-family: map-get($font-family,menu1titre);
+            font-size: lighter;
+
+        }
+        img{
+          width: 10%;
+          height: 10%;
+          min-width: 60px;
+          min-height: 60px;
+        }
+        @include menu(menu1) ;
 
     }
 
@@ -25,24 +46,38 @@
 
         p {
             @include radient(menu2);
+            font-size: calc(map-get($font-size,menu)80%) ;
+        }
+        h3{
+            font-family: map-get($font-family,menu2titre);
+            font-size: calc(map-get($font-size,menu)130%);
+
         }
     }
 
     .menu3 {
         @include menu(menu3);
 
-        >* {
+        p{
             @include radient(menu3);
+        }
+        h3{
+            font-family: map-get($font-family,menu3titre);
+
         }
     }
 
     .menu4 {
         @include menu(menu4);
-
-        >* {
+        p{
             @include radient(menu4);
         }
-    }
+        h3{
+            font-family: map-get($font-family,menu3titre);
+
+        }
+
+    } 
 }
 
 
@@ -56,12 +91,13 @@
     .blocProch {
         display: flex;
         flex-direction: row;
-        width: 40%;
+        width: 40vw;
+        min-width: 480px;
         justify-content: center;
         align-items: center;
-        height: 100px;
+        height: 80px;
         background-color: map-get($bg-color, gen);
-        border-radius: 25px;
+        border-radius: 15px;
 
 
         .points {
@@ -72,12 +108,10 @@
 
 
             h2 {
-                display: inline-block;
                 color: map-get($text-color, gen);
-                font-size: map-get($font-size, h2);
+                font-size: map-get($font-size, prochainement);
                 font-weight: 400;
                 width: fit-content;
-                overflow-x: none;
             }
 
             [class*=pt] {

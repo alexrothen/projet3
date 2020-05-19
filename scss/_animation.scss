@@ -1,9 +1,9 @@
 @keyframes points{
-    0%{
+    from{
         opacity: 1;
         transform: scale(1);
-    }
-    100%{
+    };
+    to{
         transform: scale(0);
         opacity: 0;
     }    
@@ -15,12 +15,28 @@
 .pt1{
     animation-delay: 250ms;
     margin-left: 10px;
-}
+};
 .pt2{
     animation-delay: 500ms;
-}
+};
 .pt3{
     animation-delay: 750ms;
-}
+};
+
+@keyframes menu{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    };
+    100%{
+        transform: scale(1.1);
+        opacity: 0.8;
+    } 
+ } 
+a
+    :hover {
+        animation: menu 300ms 50ms ease-in-out both;}
+    
+ 
 
 

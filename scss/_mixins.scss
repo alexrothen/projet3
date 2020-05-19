@@ -1,31 +1,35 @@
 @mixin menu($menu) {
     background-color: map-get($bg-color, $menu);
-    grid-area: $menu; 
+    grid-area: $menu;
     width: 85%;
     max-width: 540px;
     height: 755px;
     box-shadow: 0 0 25px lighten(grey, 25%);
     display: flex;
-    flex-direction: column;
+    text-align: center;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: map-get($font-size,menuTitre);
+    align-content: center;
     font-weight: 400;
+    font-size: map-get($font-size,menu);
     font-family: map-get($font-family, $menu);
-    color: map-get($text-color, $menu); 
+    color: map-get($text-color, $menu);
 }
+
 @mixin radient ($menu) {
-    background: map-get($bg-text, $menu);
+    background: map-get($radient-text, $menu);
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
-     -moz-background-clip: text;
-     background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-     -moz-text-fill-color: transparent;
-     text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-fill-color: transparent;
 
 }
+
 @mixin points {
     border-radius: 50%;
     width: 10px;
@@ -33,33 +37,42 @@
     background-color: map-get($text-color, gen);
     margin-right: 10px;
 }
+
 @mixin header {
     display: flex;
     background-color: map-get($bg-color, gen);
-    height: 240px;   
+    height: 240px;
+
     h1 {
-    margin: auto;
-    color: map-get($text-color, gen);
-    font-size: 5rem;
-    font-family: map-get($font-family, gen);
-    letter-spacing: -0.4rem;    
+        margin: auto;
+        color: map-get($text-color, gen);
+        font-size: map-get($font-size, header);
+        font-family: map-get($font-family, gen);
+        letter-spacing: -0.4rem;
     }
 }
-@mixin footer {  
-    height: 140px;
+
+@mixin footer {
+    height: 120px;
     background-color: map-get($bg-color, gen);
     color: map-get($text-color, gen);
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-        h3 {
-        font-size: map-get($font-size, h3);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+
+    h3 {
+        font-size: map-get($font-size, footer);
         font-weight: 400;
-        }
-        .mentions {
+    }
+
+    .mentions {
         margin-left: 2%;
-        }
-        .contact {
+    }
+
+    .contact {
         margin-right: 2%;
-        }
+    }
 }

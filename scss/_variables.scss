@@ -1,25 +1,37 @@
-$bg-color: (
-    gen:#579C87,
+$bg-color: (gen:#579C87,
     menu1:#fcdfdb,
     menu2:#fff5fe,
-    menu3:#f9f9f9,
-    menu4: #fdfffd
-    );
-$text-color:(
-    gen:darken(#fdcb46,5%), 
+     menu3:#f9f9f9,
+    menu4: #fdfffd);
+
+$text-color:(gen:darken(#fdcb46, 5%),
     menu1:#3d1319,
     menu2: #c77412,
-    );
-$box-shadow-color: #fdfffd;
-$font-size:(
-    h1:7rem,
-    h2:3.2rem,
-    h3:2.8rem,
-    menuTitre:2.5rem
+    menu3: #0887fb, 
+    menu4:#72bf56,
 );
-$font-family:(
-    gen: 'Work Sans',
-    menu1: 'Devonshire',);
-$bg-text:(
-    menu2: radial-gradient(ellipse at top left,#c77412 10%,#9861ef 80% )
-)
+
+$box-shadow-color: #fdfffd;
+
+$font-size:(header:6.5rem,
+    menu: 2.5rem,
+    prochainement:2.8rem,
+    footer:2.5rem,
+
+);
+
+$font-family:(gen: 'Work Sans',
+    menu1: 'Devonshire',
+    menu1titre: 'Kalam',
+    menu2: 'Croissant One',
+    menu2titre: 'Segoe UI',
+    menu3: 'Dancing Script',
+    menu3titre: 'Bad Script',
+    menu4:'Kaushan Script'
+    );
+
+$radient-text:(menu1: radial-gradient(circle at bottom right, #f05261, #f6916a),
+    menu2: radial-gradient(ellipse at top left, #c77412 10%, #9861ef 80%),
+    menu3: radial-gradient(circle at bottom left,#0431df,#0887fb 60%), 
+    menu4: radial-gradient(circle at bottom right, #bfff7e 30%,#42973c)
+    )
