@@ -3,7 +3,14 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        height: 2250px;
+      height: 2250px;
+      @include tablet{
+        height: 1700px;
+    } ;
+    @include mobile{
+        height: 2000px;
+}}       
+      
     
     
 
@@ -11,10 +18,34 @@
         overflow-x: hidden;
         margin: auto;
         font-family: map-get($font-family, gen);
-
+}
+ 
         header {
             @include header;
+            
         }
+        .blocMenu{
+        display: grid;
+        width: 85vw;
+        margin: auto;
+        height: 1750Px;
+        align-content: space-evenly;
+        justify-items: center;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        @include tablet{
+            height: 1300px;
+
+        };
+        @include mobile{
+            height: 2100px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "menu1" "menu2" "menu3" "menu4";
+            justify-content: space-evenly;
+        };
+        grid-template-areas: "menu1 menu2"
+            "menu3 menu4";}
 
         .menu {
             display: flex;
@@ -24,6 +55,7 @@
 
         footer {
             @include footer;
-        }
-    }
-}
+
+            }
+        
+    

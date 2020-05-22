@@ -39,4 +39,8 @@ $radient-text:(menu1: radial-gradient(circle at bottom right, #f05261, #f6916a),
     menu2: radial-gradient(circle at top left, #c77412, #9861ef 70%),
     menu3: radial-gradient(circle at bottom left,#0431df,#0887fb 60%), 
     menu4: radial-gradient(circle at bottom right, #bfff7e 30%,#42973c)
-    )
+    );
+ $breakpoints:(
+     mobile:576px,
+     tablet:992px,
+ );   

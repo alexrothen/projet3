@@ -7,16 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 .blocMenu {
-    display: grid;
-    width: 85vw;
-    margin: auto;
-    height: 1750Px;
-    align-content: space-evenly;
-    justify-items: center;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "menu1 menu2"
-        "menu3 menu4";
+     
    a{
        display: block;
        text-decoration: none;
@@ -83,15 +74,22 @@
     justify-content: center;
     align-items: start;
     height: 180px;
+ 
 
     .blocProch {
         display: flex;
         flex-direction: row;
         width: 40vw;
-        min-width: 480px;
+        min-width: 280px;
         justify-content: center;
         align-items: center;
         height: 80px;
+        @include mobile{
+            height: 50px;
+        }
+        @include tablet{
+            height: 60px;
+        }
         background-color: map-get($bg-color, gen);
         border-radius: 15px;
 
@@ -108,6 +106,15 @@
                 font-size: map-get($font-size, prochainement);
                 font-weight: 400;
                 width: fit-content;
+                @include tablet {
+                    font-size: map-get($font-size,prochainement)/1.5;
+    
+                }
+                @include mobile {
+                font-size: map-get($font-size,prochainement)/2;
+
+            }
+          
             }
 
             [class*=pt] {
