@@ -1,10 +1,11 @@
 @mixin menu($menu) {
+    display: block;
+    text-decoration: none;
     background-color: map-get($bg-color, $menu);
     grid-area: $menu;
     width: 85%;
-    min-width: 280px;
     max-width: 540px;
-    height: 755px;
+    height: 700px;
     
     @include tablet{
         height: 600px;
@@ -14,10 +15,10 @@
 
     }
     @include mobile{
-        height: 500px;
+        max-width: 200px;
         margin: auto;
-        width: 80%;
-        font-size: map-get($font-size, menu)/1.5;
+        height: 280px;
+        font-size: map-get($font-size, menu)/2.5;
 
     }
     box-shadow: 0 0 25px lighten(grey, 25%);
@@ -25,8 +26,6 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
     font-weight: 400;
     font-size: map-get($font-size, menu);
     font-family: map-get($font-family, $menu);
@@ -48,103 +47,28 @@
 
 @mixin points {
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+
     @include mobile{
-        width: 5px;
-        height: 5px;
-        margin-right: 5px;
+        width: 4px;
+        height: 4px;
+        margin-right: 3px;
     }
-    @include tablet{
-        width: 7px;
-        height: 7px;
-        margin-right: 5px;
-    }
+  
     background-color: map-get($text-color, gen);
-    margin-right: 10px;
 }
-
-@mixin header {
-    display: flex;
-    background-color: map-get($bg-color, gen);
-    height: 240px;
-    @include tablet{
-        height: 220px;
-    }
-    @include mobile{
-        height: 200px;
-    }
-   
-
-    h1 {
-        margin: auto;
-        color: map-get($text-color, gen);
-        font-size: map-get($font-size, header);
-        font-family: map-get($font-family, gen);
-        letter-spacing: -0.4rem;
-        @include tablet{
-            font-size: map-get($font-size, header)/1.2;    
-
-
-    }
-        @include mobile{
-            font-size: map-get($font-size, header)/1.5;}
-        
-    }
-}
-
-@mixin footer {
-    height: 100px;
-    background-color: map-get($bg-color, gen);
-    color: map-get($text-color, gen);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-
-    a:hover {
-        animation: wiggle 300ms infinite;
-    }
-
-    a {
-        display: block;
-        text-decoration: none;
-
-        h3 {
-            font-size: map-get($font-size, footer);
-            font-weight: 400;
-            color: map-get($text-color, gen);
-            @include tablet{
-                font-size: map-get($font-size,footer)/1.4;
-            
-        }    
-            @include mobile{
-                font-size: map-get($font-size,footer)/2;}
-          
-
-        }
-    }
-
-    .mentions {
-        margin-left: 2%;
-        text-align: left;
-    }
-
-    .contact {
-        margin-right: 2%;
-        text-align: right;
-    }
-}
-
 
 @mixin note {
     width: 10%;
     height: 10%;
     min-width: 60px;
     min-height: 60px;
+    @include mobile{
+        min-width: 30px;
+        min-height: 30px;
+    }
 }
 
 @mixin legende {
