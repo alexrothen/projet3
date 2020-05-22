@@ -73,8 +73,11 @@
     margin: auto;
     justify-content: center;
     align-items: start;
-    @include mobile{
+    @include tablet{
         height: 100px;
+    }
+    @include mobile{
+        height: 80px;
     }
  
 

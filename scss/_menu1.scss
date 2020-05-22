@@ -4,6 +4,9 @@ main {
 
     .menuPage__menu1 {
         @include menuPage(menu1);
+        .entree__menu, .plat__menu, .dessert__menu{
+            padding: 0;
+        }
 
         h3 {
             font-family: map-get($font-family, menu1titre);
@@ -12,11 +15,13 @@ main {
         .blocTitre {
 
             img {
+
                 margin: auto;
                 margin-bottom: 0;
                 @include note;
-                min-width: 200px;
-                min-height: 200px;
+                min-width: 100px;
+                min-height: 100px;
+              
             }
             h2{
                 margin-top: 0;
@@ -28,31 +33,47 @@ main {
         }
 
         ul {
-            display: flex;
             font-family: map-get($font-family, menu1titre);
-            list-style-type: none;
 
 
         }
 
         .blocTitre__bottom {
-            height: 200px;
             flex-direction: row;
             flex: auto;
+            height: 120px;
 
             align-items: center;
+            @include mobile{
+                height: 80px;
+            }
 
             h2 {
                 height: fit-content;
                 margin: 0;
-                font-size: 3.5rem;
-                padding-left: 10px;
+                font-size: 2.8rem;
+                padding-left: 10px; 
+                @include tablet{
+                    font-size: 2.4rem;
+                }
+                @include mobile{
+                    font-size: 1.5rem;
+                }
+              
 
             }
 
             img {
                 @include note;
                 margin: 0;
+                @include tablet{
+                    min-width: 40px;
+                    min-height: 40px;
+                }
+                @include mobile{
+                    min-width: 20px;
+                    min-height: 20px;
+                }
             }
         }
 

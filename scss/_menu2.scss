@@ -1,43 +1,29 @@
 
-       
+        
+.menuPage__menu2 {
+    @include menuPage(menu2);
+    font-family: map-get($font-family,menu2titre);
+    .blocTitre{
+        @include radient(menu2)
+    }
+    .menu--titre{
+        font-size: map-get($font-size,texte)/1.2;
+    }
+    
+    >.entree {
+        color: map-get($text-color, entree__menu2);
 
-    .menuPage__menu2 {
-        @include menuPage(menu2);
-        .blocTitre{
-       
-        h2{  
-            @include radient(menu2);
-            font-size: 3.8rem;
-
-        }
     }
 
-        .entree__menu2{
-            color: map-get($text-color,entree__menu2);
-
-        }
-        .plat__menu2{
-            color: map-get($text-color,plat__menu2);
-
-        }
-        .dessert__menu2{            
-            color: map-get($text-color,dessert__menu2);
-
-
-        }
-
-        h3 {
-            font-family: map-get($font-family, menu2titre);
-            text-align: center;
-        }
-
-        ul {
-            display: flex;
-            font-family: map-get($font-family, menu2titre);
-            list-style-type: none;
-
-
-        }
-       
+    >.plat{
+        color: map-get($text-color, plat__menu2);
 
     }
+
+    >.dessert{
+        color: map-get($text-color, dessert__menu2);}
+
+}
+
+    
+    
