@@ -46,7 +46,6 @@ main {
             height: auto;
             flex: auto;
 
-            @include mobile {}
 
             h2 {
                 margin: 0;
@@ -58,14 +57,14 @@ main {
                 }
 
                 @include mobile {
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                 }
 
 
             }
 
             img {
-                max-width: 8%;
+                max-width: 7%;
                 margin: 0;
             }
         }

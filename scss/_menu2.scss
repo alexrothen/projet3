@@ -2,26 +2,157 @@
         
 .menuPage__menu2 {
     @include menuPage(menu2);
-    font-family: map-get($font-family,menu2titre);
     .blocTitre{
-        @include radient(menu2)
+        @include radient(menu2);
+        h2{
+        font-size: map-get($font-size,menu)*1.1;
+        @include tablet {
+         font-size: map-get($font-size,menu)/1.6;
+   
+        }
+        @include mobile{
+        font-size: map-get($font-size,menu)/2.2;
+
+
+        }    
+    }
+
     }
     .menu--titre{
-        font-size: map-get($font-size,texte)/1.2;
+        font-size: map-get($font-size,texte)/1.15;
+        @include tablet{
+            font-size: map-get($font-size,texte)/1.8;
+  
+        }
+        @include mobile{
+            font-size: map-get($font-size,texte)/3.1;
+  
+        }
     }
     
-    >.entree {
+    .entree {
         color: map-get($text-color, entree__menu2);
+        .menu--titre {
+            h3 {
+                display: block;
+                flex: 2;
+                text-align: center;
+                position: relative;
+                margin-left: 2%;
+                margin-right: 2%;
+                margin-block-start: 0;
+                 margin-block-end: 0;
+               
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    border-radius: 50%;
+                    width: 1px;
+                    height: 0.15rem;
+                    transition: all 180ms 20ms cubic-bezier(.56,.93,1,.58);
+                    opacity: 0;
+                    background-color: map-get($text-color,entree__menu2);
+                    left: 0;
+                }
+            }
+         
+            h3 {
+        
+
+                &:hover {
+                 
+                    &::after {
+                        width: 100%;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
 
     }
 
-    >.plat{
+    .plat{
         color: map-get($text-color, plat__menu2);
+        .menu--titre {
+            h3 {
+                display: block;
+                flex: 2;
+                text-align: center;
+                position: relative;
+                margin-left: 2%;
+                margin-right: 2%;
+                margin-block-start: 0;
+                 margin-block-end: 0;
+               
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    border-radius: 50%;
+                    width: 1px;
+                    height: 0.15rem;
+                    transition: all 180ms 20ms cubic-bezier(.56,.93,1,.58);
+                    opacity: 0;
+                    background-color: map-get($text-color,plat__menu2);
+                    left: 0;
+                }
+            }
+         
+            h3 {
+        
+
+                &:hover {
+                 
+                    &::after {
+                        width: 100%;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
 
     }
 
-    >.dessert{
-        color: map-get($text-color, dessert__menu2);}
+    .dessert{
+        color: map-get($text-color, dessert__menu2);
+        .menu--titre {
+            h3 {
+                display: block;
+                flex: 2;
+                text-align: center;
+                position: relative;
+                margin-left: 2%;
+                margin-right: 2%;
+                margin-block-start: 0;
+                 margin-block-end: 0;
+               
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    border-radius: 50%;
+                    width: 1px;
+                    height: 0.15rem;
+                    transition: all 180ms 20ms cubic-bezier(.56,.93,1,.58);
+                    opacity: 0;
+                    background-color: map-get($text-color,dessert__menu2);
+                    left: 0;
+                }
+            }
+         
+            h3 {
+        
+
+                &:hover {
+                 
+                    &::after {
+                        width: 100%;
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }}
 
 }
 

@@ -108,3 +108,29 @@ footer a {
         animation: wiggle 300ms infinite;
     }
 }
+
+@keyframes underline {
+    0% {
+        opacity: 0;
+        transform: left translateX(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+}
+
+.menu--titre {
+    h3 {
+        
+
+        &:hover {
+         
+            &::after {
+                width: 100%;
+                opacity: 0.8;
+            }
+        }
+    }
+}

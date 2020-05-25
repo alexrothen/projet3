@@ -3,9 +3,9 @@
     text-decoration: none;
     background-color: map-get($bg-color, $menu);
     grid-area: $menu;
-    width: 85%;
-    max-width: 400px;
-    height: 550px;
+    width: 480px;
+    height: 600px;
+    max-width: 40vw;
     box-shadow: 0 0 25px lighten(grey, 25%);
     display: flex;
     text-align: center;
@@ -15,18 +15,22 @@
     font-size: map-get($font-size, menu);
     font-family: map-get($font-family, $menu);
     color: map-get($text-color, $menu);
+    
  
 
     @include tablet{
         height: 50vh;
         margin: auto;
+        max-width: 35vw;
+        width: 260px;
         font-size: map-get($font-size, menu)/1.3;
 
     }
     @include mobile{
         height: 30vh;
         margin: auto;
-        max-width: 150px;
+        width: 160px;
+        max-width: 40vw;
         font-size: map-get($font-size, menu)/2.5;
 
     }  
@@ -91,7 +95,7 @@
     font-size: map-get($font-size, texte);
     @include tablet{
         font-size: map-get($font-size,texte)/1.5;
-        height: 110vh;
+        height: 135vh;
 
     };
     @include mobile{
@@ -101,18 +105,56 @@
         position: relative;
 
     }
+    .menu--titre {
+        h3 {
+            display: block;
+            flex: 2;
+            text-align: center;
+            position: relative;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-block-start: 0;
+             margin-block-end: 0;
+           
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                border-radius: 50%;
+                width: 1px;
+                height: 0.15rem;
+                transition: all 180ms 20ms cubic-bezier(.56,.93,1,.58);
+                opacity: 0;
+                background-color: map-get($text-color, $menu);
+                left: 0;
+            }
+        }
+        h3 {
+        
+
+            &:hover {
+             
+                &::after {
+                    width: 100%;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+    
+ 
 
     .blocTitre {
 
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 250px;
+        height: 400px;
         @include tablet{
-        height: 20vh;
+        height: 30vh;
         }
         @include mobile{
-        height: 15vh;
+        height: 25vh;
 
         }
 
@@ -135,7 +177,7 @@
     .entree,
     .plat,
     .dessert {
-        margin-bottom: 8%;
+        margin-bottom: 10%;
     }
     ul{
         padding-inline-start: 0px;
