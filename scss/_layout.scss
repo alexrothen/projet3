@@ -10,7 +10,7 @@
         height: 1900px;
 
         @include tablet {
-            height: 170vh;
+            height: 125vh;
         };
         @include mobile {
             height: 100vh;
@@ -86,7 +86,7 @@
         grid-template-columns: 1fr 1fr;
 
         @include tablet {
-            height: 120vh;
+            height: 90vh;
             width: 80vw;
 
         };
@@ -95,8 +95,8 @@
             margin-left: 0 0 0 auto;
             width: 100vw;
             height: 70vh;
-            padding-left: 10%;
-            padding-right: 10%;
+            padding-left: 8%;
+            padding-right: 8%;
         
 
         }
