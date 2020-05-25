@@ -27,7 +27,8 @@
 
     }
     @include mobile{
-        height: 30vh;
+        min-height: 30vh;
+        height: 200px;
         margin: auto;
         width: 160px;
         max-width: 40vw;
