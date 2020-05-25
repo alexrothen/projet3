@@ -20,10 +20,10 @@
         height: 2150px;
 
         @include tablet {
-            height: 1450px;
+            height: 170vh;
         };
         @include mobile {
-            height: 880px;
+            height: 130vh;
         }
     }
 
