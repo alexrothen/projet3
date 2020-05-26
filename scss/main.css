@@ -659,7 +659,7 @@ main .menuPage__menu1 {
   main .menuPage__menu1 {
     font-size: 0.6rem;
     width: 70vw;
-    height: 110vh;
+    height: 50px;
     position: relative;
   }
 }
@@ -873,7 +873,7 @@ main .menuPage__menu1 .blocTitre__bottom img {
   .menuPage__menu2 {
     font-size: 0.6rem;
     width: 70vw;
-    height: 110vh;
+    height: 50px;
     position: relative;
   }
 }
@@ -1188,7 +1188,7 @@ main .legende {
   .menuPage__menu3 {
     font-size: 0.6rem;
     width: 70vw;
-    height: 110vh;
+    height: 50px;
     position: relative;
   }
 }
@@ -1469,7 +1469,7 @@ main .legende {
   .menuPage__menu4 {
     font-size: 0.6rem;
     width: 70vw;
-    height: 110vh;
+    height: 50px;
     position: relative;
   }
 }
