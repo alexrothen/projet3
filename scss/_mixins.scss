@@ -4,7 +4,7 @@
     background-color: map-get($bg-color, $menu);
     grid-area: $menu;
     width: 480px;
-    height: 100vh;
+    height: 80vh;
     max-width: 40vw;
     box-shadow: 0 0 25px lighten(grey, 25%);
     display: flex;
@@ -88,7 +88,7 @@
     background-color: map-get($bg-color, $menu);
     box-shadow: 0 0 25px lighten(grey, 25%);
     width: 65vw;
-    height: 100vh;
+    height: 190vh;
     margin: auto auto 15% auto;
     padding: 5%;
     position: relative;
@@ -140,6 +140,7 @@
             justify-content: center;
             align-items: center;
             margin: 0;
+            margin-bottom: 5%;
             img{
                 max-width: 20vw;
                 width: fit-content;

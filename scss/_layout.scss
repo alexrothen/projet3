@@ -7,7 +7,7 @@
     
     
     .body__index {
-        height: 1900px;
+        height: 250vh;
 
         @include tablet {
             height: 125vh;
@@ -17,7 +17,7 @@
         }
     }
     .body__page {
-        height: 500px;
+        height: 200vh;
 
         @include tablet {
             height: 130vh;
@@ -76,10 +76,10 @@
     }
     .blocMenu {
         display: grid;
-        width: 90vw;
+        width: 80vw;
         max-width: 110vw;
         margin: auto;
-        height: 1400Px;
+        height: 190vh;
         justify-items: center;
         align-content: space-evenly;
         grid-template-rows: auto;
