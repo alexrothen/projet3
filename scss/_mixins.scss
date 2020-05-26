@@ -101,7 +101,7 @@
     @include mobile{
         font-size: map-get($font-size,texte)/2.5;
         width: 70vw;
-        height: 90vh;
+        height: 85vh;
         position: relative;
     }
     .blocTitre {
@@ -154,6 +154,7 @@
                 flex: auto;     
             }       
             h3 {
+            font-size: map-get($font-size,texte)*1.1;    
             display: block;
             flex: 2;
             text-align: center;
@@ -189,13 +190,11 @@
         }
     }
     .entree,
-    .plat
-    {
+    .plat,
+    .dessert{
         margin-bottom: 10%;
     }
-    .dessert{
-        margin-bottom: 5%;
-    }
+  
     ul{
         padding-inline-start: 0px;
         list-style-type: none;}
