@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
+
 
 .blocMenu {
  
@@ -71,7 +73,7 @@
             @include radient(menu3);
         }
         h3{
-            font-family: map-get($font-family,menu3titre);
+            font-family: map-get($font-family,menu1titre);
 
         }
     }
@@ -83,7 +85,7 @@
             @include radient(menu4);
         }
         h3{
-            font-family: map-get($font-family,menu3titre);
+            font-family: map-get($font-family,menu1titre);
 
         }
 

@@ -14,14 +14,17 @@ main {
     }
 
     h3 {
-        font-family: map-get($font-family, menu3titre);
+        font-family: map-get($font-family, menu1titre);
+        font-weight: 300;
         text-align: center;
 
     }
 
     ul {
         display: flex;
-        font-family: map-get($font-family, menu3titre);
+        font-family: map-get($font-family, menu1titre);
+        font-weight: 300;
+
         list-style-type: none;
 
 

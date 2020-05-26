@@ -13,6 +13,8 @@ main {
 
         h3 {
             font-family: map-get($font-family, menu1titre);
+            font-weight: 400;
+
         }
 
         .blocTitre {
@@ -36,6 +38,8 @@ main {
 
         ul {
             font-family: map-get($font-family, menu1titre);
+            font-weight: 300;
+
 
 
         }
