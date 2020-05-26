@@ -62,11 +62,11 @@ main {
                     font-size: map-get($font-size,texte)*2;
                     @include tablet
                     {
-                        font-size: map-get($font-size,texte)*0.5;
+                        font-size: map-get($font-size,texte)*1.2;
 
                     }
                     @include mobile{
-                        font-size: map-get($font-size,texte)*0.5;
+                        font-size: map-get($font-size,texte)*0.7;
 
                     }
                 
