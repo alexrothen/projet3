@@ -189,9 +189,12 @@
         }
     }
     .entree,
-    .plat,
-    .dessert {
+    .plat
+    {
         margin-bottom: 10%;
+    }
+    .dessert{
+        margin-bottom: 5%;
     }
     ul{
         padding-inline-start: 0px;
