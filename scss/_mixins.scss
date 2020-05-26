@@ -103,10 +103,57 @@
         width: 70vw;
         height: 85vh;
         position: relative;
+    }
+    .blocTitre {
 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 400px;
+        @include tablet{
+        height: 30vh;
+        }
+        @include mobile{
+        height: 18vh;
+
+        }
+
+
+        h2 {
+            font-family: map-get($font-family, $menu);
+            font-size: map-get($font-size,titreMenu);
+            @include tablet{
+                font-size: map-get($font-size,titreMenu)/1.8;
+                @include mobile{
+                    font-size: map-get($font-size,titreMenu)/2.8;
+                }   
+                
+            }
+            text-align: center;
+            margin: auto;
+
+        }
     }
     .menu--titre {
-        h3 {
+       
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            img{
+                max-width: 20vw;
+                width: fit-content;
+                height: auto;
+                flex: auto;
+            }
+            li:last-child> img{
+                transform: scaleX(-1);
+            }
+            li:nth-last-child(2){
+                flex: auto;     
+            }       
+            h3 {
             display: block;
             flex: 2;
             text-align: center;
@@ -141,39 +188,6 @@
             }
         }
     }
-    
- 
-
-    .blocTitre {
-
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 400px;
-        @include tablet{
-        height: 30vh;
-        }
-        @include mobile{
-        height: 18vh;
-
-        }
-
-
-        h2 {
-            font-family: map-get($font-family, $menu);
-            font-size: map-get($font-size,titreMenu);
-            @include tablet{
-                font-size: map-get($font-size,titreMenu)/1.8;
-                @include mobile{
-                    font-size: map-get($font-size,titreMenu)/2.8;
-                }   
-                
-            }
-            text-align: center;
-            margin: auto;
-
-        }
-    }
     .entree,
     .plat,
     .dessert {
@@ -185,29 +199,6 @@
     li{
         line-height: 1.4;
     }    
-
-    .menu--titre{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        img{
-            max-width: 20vw;
-            width: fit-content;
-            height: auto;
-            flex: auto;
-        }
-        li:last-child> img{
-            transform: scaleX(-1);
-        }
-        li:nth-last-child(2){
-            flex: auto;
-         
-            
-        }
-   
-    }
    
     .entree__menu,
     .plat__menu, 
