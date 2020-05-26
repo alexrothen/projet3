@@ -95,7 +95,7 @@
     font-size: map-get($font-size, texte);
     @include tablet{
         font-size: map-get($font-size,texte)/1.5;
-        height: 100vh;
+        height: 80vh;
 
     };
     @include mobile{
@@ -111,7 +111,7 @@
         flex-direction: column;
         height: 400px;
         @include tablet{
-        height: 20vh;
+        height: 18vh;
         }
         @include mobile{
         height: 18vh;
