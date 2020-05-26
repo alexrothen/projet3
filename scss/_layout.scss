@@ -20,7 +20,7 @@
         height: 2150px;
 
         @include tablet {
-            height: 200vh;
+            height: 150vh;
         };
         @include mobile {
             height: 130vh;

@@ -95,7 +95,7 @@
     font-size: map-get($font-size, texte);
     @include tablet{
         font-size: map-get($font-size,texte)/1.5;
-        height: 135vh;
+        height: 100vh;
 
     };
     @include mobile{
