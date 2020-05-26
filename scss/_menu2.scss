@@ -5,13 +5,13 @@
     .blocTitre{
        
         h2{
-        // @include radient(menu2);   
+        @include radient(menu2);   
         font-size: map-get($font-size,menu)*1.1;
         @include tablet {
              font-size: map-get($font-size,menu)/1.6;
             }
         @include mobile{
-            font-size: map-get($font-size,menu)/2.2;
+            font-size: map-get($font-size,menu)/2.5;
             }    
     }
 
@@ -23,7 +23,7 @@
   
         }
         @include mobile{
-            font-size: map-get($font-size,texte)/3.1;
+            font-size: map-get($font-size,texte)/3.2;
   
         }
     }
