@@ -3,7 +3,7 @@
         padding: 0;
         box-sizing: border-box;
         @include tablet {
-            // height: 200vh;
+            height: 200vh;
             max-height: 1250px;
         };
     }
