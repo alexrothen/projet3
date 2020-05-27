@@ -97,7 +97,7 @@
     @include tablet{
         font-size: map-get($font-size,texte)/1.5;
         // height: 130vh;
-        max-height: 820px;
+        max-height: 1000px;
 
     };
     @include mobile{

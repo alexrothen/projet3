@@ -7,11 +7,10 @@
     
     
     .body__index {
-        height: 1800px;
+        height: 2000px;
 
         @include tablet {
-            height: 150vh;
-            max-height: 1000px;
+            height: 1300px;
         };
         @include mobile {
             height: 100vh;
@@ -80,7 +79,7 @@
         width: 80vw;
         max-width: 110vw;
         margin: auto;
-        height: 190vh;
+        height: 1500px;
         justify-items: center;
         align-content: space-evenly;
         grid-template-rows: auto;
