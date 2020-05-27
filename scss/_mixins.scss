@@ -23,7 +23,7 @@
         // width: 35vw;
         max-width: 260px;
         // height: 50vh;
-        max-height: 380px;
+        height: 380px;
         margin: auto;
         font-size: map-get($font-size, menu)/2;
 
@@ -93,7 +93,6 @@
     max-height: 1650px;
     margin: auto auto 15% auto;
     padding: 5%;
-    position: relative;
     font-size: map-get($font-size, texte);
     @include tablet{
         font-size: map-get($font-size,texte)/1.5;
