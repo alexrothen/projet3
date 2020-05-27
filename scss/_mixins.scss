@@ -97,7 +97,8 @@
     font-size: map-get($font-size, texte);
     @include tablet{
         font-size: map-get($font-size,texte)/1.5;
-        height: 80vh;
+        height: 130vh;
+        max-height: 820px;
 
     };
     @include mobile{
@@ -110,12 +111,15 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        height: 350px;
+        height: 320px;
+        margin-bottom: 2%;
         @include tablet{
         height: 18vh;
+        min-height: 180px;
         }
         @include mobile{
         height: 18vh;
+        min-height: 100px;
 
         }
 

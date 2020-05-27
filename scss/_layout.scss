@@ -18,10 +18,10 @@
         }
     }
     .body__page {
-        height: 200vh;
+        height: 1600px;
 
         @include tablet {
-            height: 130vh;
+            height: 200vh;
         };
         @include mobile {
             height: 125vh;
