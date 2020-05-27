@@ -21,7 +21,6 @@
 
     @include tablet{
         width: 35vw;
-        height: 55vh;
         max-width: 260px;
         max-height: 400px;
         margin: auto;
@@ -90,8 +89,7 @@
     background-color: map-get($bg-color, $menu);
     box-shadow: 0 0 25px lighten(grey, 25%);
     width: 65vw;
-    height: 190vh;
-    max-height: 1750px;
+    max-height: 1650px;
     margin: auto auto 15% auto;
     padding: 5%;
     position: relative;
@@ -115,7 +113,6 @@
         height: 320px;
         margin-bottom: 2%;
         @include tablet{
-        height: 18vh;
         min-height: 180px;
         }
         @include mobile{
