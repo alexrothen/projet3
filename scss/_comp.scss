@@ -52,7 +52,7 @@
             font-family: map-get($font-family,menu2titre);
             font-size: map-get($font-size,menu)*1.2;
             @include tablet{
-                font-size: map-get($font-size,menu)/1.2;
+                font-size: map-get($font-size,menu)/1.4;
 
             };
             @include mobile{
