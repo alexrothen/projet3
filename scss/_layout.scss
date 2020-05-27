@@ -8,7 +8,7 @@
     
     
     .body__index {
-        height: 2000px;
+        height: 1850px;
         @include tablet {
             height: 1250px;
         };
@@ -80,7 +80,7 @@
         width: 80vw;
         max-width: 110vw;
         margin: auto;
-        height: 1500px;
+        height: 1400px;
         justify-items: center;
         align-content: space-evenly;
         grid-template-rows: auto;
