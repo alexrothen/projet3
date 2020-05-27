@@ -98,7 +98,7 @@
     font-size: map-get($font-size, texte);
     @include tablet{
         font-size: map-get($font-size,texte)/1.5;
-        height: 130vh;
+        // height: 130vh;
         max-height: 820px;
 
     };
