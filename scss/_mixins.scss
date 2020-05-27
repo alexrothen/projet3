@@ -114,7 +114,7 @@
         height: 320px;
         margin-bottom: 2%;
         @include tablet{
-        min-height: 180px;
+        height: 160px;
         }
         @include mobile{
         height: 18vh;
