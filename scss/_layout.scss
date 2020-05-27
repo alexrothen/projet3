@@ -10,7 +10,7 @@
         height: 250vh;
 
         @include tablet {
-            height: 125vh;
+            height: 150vh;
         };
         @include mobile {
             height: 100vh;
@@ -85,8 +85,10 @@
         grid-template-columns: 1fr 1fr;
 
         @include tablet {
-            height:90vh;
+            height:130vh;
             width: 80vw;
+            max-height: 900px;
+
 
         };
 
