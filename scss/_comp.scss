@@ -40,7 +40,7 @@
             @include radient(menu2);
             font-size: map-get($font-size,menu)/1.4;
             @include tablet{
-                font-size: map-get($font-size,menu)/2.4;
+                font-size: map-get($font-size,menu)/2.7;
 
             };
             @include mobile{
@@ -52,7 +52,7 @@
             font-family: map-get($font-family,menu2titre);
             font-size: map-get($font-size,menu)*1.2;
             @include tablet{
-                font-size: map-get($font-size,menu)/1.4;
+                font-size: map-get($font-size,menu)/1.7;
 
             };
             @include mobile{
