@@ -10,7 +10,7 @@
     .body__index {
         height: 1850px;
         @include tablet {
-            height: 1250px;
+            height: 1200px;
         };
 
         @include mobile {
@@ -89,7 +89,7 @@
         @include tablet {
            
             width: 80vw;
-            max-height: 900px;
+            max-height: 850px;
 
 
         };
