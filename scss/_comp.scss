@@ -118,11 +118,10 @@
             height: 60px;
         }
         @include mobile{
-            height: 35px;
+            height: 30vh;
             border-radius: 10px;
         }
         
-
 
         .points {
             display: flex;
