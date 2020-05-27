@@ -3,8 +3,8 @@
         padding: 0;
         box-sizing: border-box;
         @include tablet {
-            height: 200vh;
-            max-height: 1250px;
+            height: 1250px;
+            max-height: 170vh;
         };
     }
     
@@ -83,7 +83,7 @@
         grid-template-columns: 1fr 1fr;
 
         @include tablet {
-            // height:130vh;
+            height:120vh;
             width: 80vw;
             max-height: 900px;
 
