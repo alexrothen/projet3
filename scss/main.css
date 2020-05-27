@@ -113,7 +113,7 @@ body {
 }
 
 .body__index {
-  height: 1900px;
+  height: 250vh;
 }
 
 @media screen and (max-width: 992px) {
@@ -124,23 +124,23 @@ body {
 
 @media screen and (max-width: 576px) {
   .body__index {
-    height: 100vh;
+    height: 95vh;
   }
 }
 
 .body__page {
-  height: 2150px;
+  height: 200vh;
 }
 
 @media screen and (max-width: 992px) {
   .body__page {
-    height: 150vh;
+    height: 130vh;
   }
 }
 
 @media screen and (max-width: 576px) {
   .body__page {
-    height: 140vh;
+    height: 125vh;
   }
 }
 
@@ -198,10 +198,10 @@ header a h1 {
 
 .blocMenu {
   display: grid;
-  width: 90vw;
+  width: 80vw;
   max-width: 110vw;
   margin: auto;
-  height: 1400Px;
+  height: 190vh;
   justify-items: center;
   align-content: space-evenly;
   grid-template-rows: auto;
@@ -220,7 +220,7 @@ header a h1 {
   .blocMenu {
     margin-left: 0 0 0 auto;
     width: 100vw;
-    height: 70vh;
+    height: 68vh;
     padding-left: 8%;
     padding-right: 8%;
   }
@@ -293,9 +293,9 @@ footer .contact {
   text-decoration: none;
   background-color: #fcdfdb;
   grid-area: menu1;
+  height: 80vh;
   width: 480px;
-  height: 600px;
-  max-width: 40vw;
+  max-width: 35vw;
   box-shadow: 0 0 25px silver;
   display: flex;
   text-align: center;
@@ -309,10 +309,10 @@ footer .contact {
 
 @media screen and (max-width: 992px) {
   .blocMenu .menu1 {
-    max-height: 38vh;
-    margin: auto;
     max-width: 35vw;
     width: 260px;
+    max-height: 38vh;
+    margin: auto;
     font-size: 1.92308rem;
   }
 }
@@ -345,9 +345,9 @@ footer .contact {
   text-decoration: none;
   background-color: #fff5fe;
   grid-area: menu2;
+  height: 80vh;
   width: 480px;
-  height: 600px;
-  max-width: 40vw;
+  max-width: 35vw;
   box-shadow: 0 0 25px silver;
   display: flex;
   text-align: center;
@@ -361,10 +361,10 @@ footer .contact {
 
 @media screen and (max-width: 992px) {
   .blocMenu .menu2 {
-    max-height: 38vh;
-    margin: auto;
     max-width: 35vw;
     width: 260px;
+    max-height: 38vh;
+    margin: auto;
     font-size: 1.92308rem;
   }
 }
@@ -427,9 +427,9 @@ footer .contact {
   text-decoration: none;
   background-color: #f9f9f9;
   grid-area: menu3;
+  height: 80vh;
   width: 480px;
-  height: 600px;
-  max-width: 40vw;
+  max-width: 35vw;
   box-shadow: 0 0 25px silver;
   display: flex;
   text-align: center;
@@ -443,10 +443,10 @@ footer .contact {
 
 @media screen and (max-width: 992px) {
   .blocMenu .menu3 {
-    max-height: 38vh;
-    margin: auto;
     max-width: 35vw;
     width: 260px;
+    max-height: 38vh;
+    margin: auto;
     font-size: 1.92308rem;
   }
 }
@@ -482,9 +482,9 @@ footer .contact {
   text-decoration: none;
   background-color: #fdfffd;
   grid-area: menu4;
+  height: 80vh;
   width: 480px;
-  height: 600px;
-  max-width: 40vw;
+  max-width: 35vw;
   box-shadow: 0 0 25px silver;
   display: flex;
   text-align: center;
@@ -498,10 +498,10 @@ footer .contact {
 
 @media screen and (max-width: 992px) {
   .blocMenu .menu4 {
-    max-height: 38vh;
-    margin: auto;
     max-width: 35vw;
     width: 260px;
+    max-height: 38vh;
+    margin: auto;
     font-size: 1.92308rem;
   }
 }
@@ -641,32 +641,93 @@ main .menuPage__menu1 {
   background-color: #fcdfdb;
   box-shadow: 0 0 25px silver;
   width: 65vw;
-  height: 1500px;
+  height: 190vh;
   margin: auto auto 15% auto;
   padding: 5%;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 992px) {
   main .menuPage__menu1 {
-    font-size: 1rem;
-    height: 100vh;
+    font-size: 0.86667rem;
+    height: 80vh;
   }
 }
 
 @media screen and (max-width: 576px) {
   main .menuPage__menu1 {
-    font-size: 0.6rem;
+    font-size: 0.52rem;
     width: 70vw;
-    height: 50px;
-    position: relative;
+    height: 80vh;
   }
+}
+
+main .menuPage__menu1 .blocTitre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  main .menuPage__menu1 .blocTitre {
+    height: 18vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main .menuPage__menu1 .blocTitre {
+    height: 18vh;
+  }
+}
+
+main .menuPage__menu1 .blocTitre h2 {
+  font-family: "Devonshire";
+  font-size: 4rem;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  main .menuPage__menu1 .blocTitre h2 {
+    font-size: 2.22222rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 576px) {
+  main .menuPage__menu1 .blocTitre h2 {
+    font-size: 1.42857rem;
+  }
+}
+
+main .menuPage__menu1 .menu--titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+main .menuPage__menu1 .menu--titre img {
+  max-width: 20vw;
+  width: fit-content;
+  height: auto;
+  flex: auto;
+}
+
+main .menuPage__menu1 .menu--titre li:last-child > img {
+  transform: scaleX(-1);
+}
+
+main .menuPage__menu1 .menu--titre li:nth-last-child(2) {
+  flex: auto;
 }
 
 main .menuPage__menu1 .menu--titre h3 {
   display: block;
-  flex: 2;
+  flex: 1;
   text-align: center;
   position: relative;
   margin-left: 2%;
@@ -693,44 +754,6 @@ main .menuPage__menu1 .menu--titre h3:hover::after {
   opacity: 0.7;
 }
 
-main .menuPage__menu1 .blocTitre {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 400px;
-}
-
-@media screen and (max-width: 992px) {
-  main .menuPage__menu1 .blocTitre {
-    height: 30vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  main .menuPage__menu1 .blocTitre {
-    height: 18vh;
-  }
-}
-
-main .menuPage__menu1 .blocTitre h2 {
-  font-family: "Devonshire";
-  font-size: 4.5rem;
-  text-align: center;
-  margin: auto;
-}
-
-@media screen and (max-width: 992px) {
-  main .menuPage__menu1 .blocTitre h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 992px) and (max-width: 576px) {
-  main .menuPage__menu1 .blocTitre h2 {
-    font-size: 1.60714rem;
-  }
-}
-
 main .menuPage__menu1 .entree,
 main .menuPage__menu1 .plat,
 main .menuPage__menu1 .dessert {
@@ -746,29 +769,6 @@ main .menuPage__menu1 li {
   line-height: 1.4;
 }
 
-main .menuPage__menu1 .menu--titre {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-main .menuPage__menu1 .menu--titre img {
-  max-width: 20vw;
-  width: fit-content;
-  height: auto;
-  flex: auto;
-}
-
-main .menuPage__menu1 .menu--titre li:last-child > img {
-  transform: scaleX(-1);
-}
-
-main .menuPage__menu1 .menu--titre li:nth-last-child(2) {
-  flex: auto;
-}
-
 main .menuPage__menu1 .entree__menu,
 main .menuPage__menu1 .plat__menu {
   display: flex;
@@ -781,7 +781,6 @@ main .menuPage__menu1 .plat__menu li:first-child {
 
 main .menuPage__menu1 .entree__menu li:last-child,
 main .menuPage__menu1 .plat__menu li:last-child {
-  margin-left: 3%;
   flex: 0.5 0 10px;
   text-align: center;
 }
@@ -821,33 +820,43 @@ main .menuPage__menu1 ul {
 }
 
 main .menuPage__menu1 .blocTitre__bottom {
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  height: auto;
+  align-items: center;
+  margin: 0;
+}
+
+main .menuPage__menu1 .blocTitre__bottom li {
   flex: auto;
 }
 
-main .menuPage__menu1 .blocTitre__bottom h2 {
+main .menuPage__menu1 .blocTitre__bottom li h2 {
+  font-family: "Devonshire";
   margin: 0;
   margin-left: 2%;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 
 @media screen and (max-width: 992px) {
-  main .menuPage__menu1 .blocTitre__bottom h2 {
-    font-size: 2.2rem;
+  main .menuPage__menu1 .blocTitre__bottom li h2 {
+    font-size: 1.56rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  main .menuPage__menu1 .blocTitre__bottom h2 {
-    font-size: 1.3rem;
+  main .menuPage__menu1 .blocTitre__bottom li h2 {
+    font-size: 0.91rem;
   }
 }
 
-main .menuPage__menu1 .blocTitre__bottom img {
-  max-width: 7%;
-  margin: 0;
+main .menuPage__menu1 .blocTitre__bottom li {
+  display: contents;
+  flex: 1;
+}
+
+main .menuPage__menu1 .blocTitre__bottom li img {
+  max-width: 5%;
 }
 
 .menuPage__menu2 {
@@ -855,32 +864,93 @@ main .menuPage__menu1 .blocTitre__bottom img {
   background-color: #fff5fe;
   box-shadow: 0 0 25px silver;
   width: 65vw;
-  height: 1500px;
+  height: 190vh;
   margin: auto auto 15% auto;
   padding: 5%;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 992px) {
   .menuPage__menu2 {
-    font-size: 1rem;
-    height: 100vh;
+    font-size: 0.86667rem;
+    height: 80vh;
   }
 }
 
 @media screen and (max-width: 576px) {
   .menuPage__menu2 {
-    font-size: 0.6rem;
+    font-size: 0.52rem;
     width: 70vw;
-    height: 50px;
-    position: relative;
+    height: 80vh;
   }
+}
+
+.menuPage__menu2 .blocTitre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  .menuPage__menu2 .blocTitre {
+    height: 18vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menuPage__menu2 .blocTitre {
+    height: 18vh;
+  }
+}
+
+.menuPage__menu2 .blocTitre h2 {
+  font-family: "Croissant One";
+  font-size: 4rem;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .menuPage__menu2 .blocTitre h2 {
+    font-size: 2.22222rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 576px) {
+  .menuPage__menu2 .blocTitre h2 {
+    font-size: 1.42857rem;
+  }
+}
+
+.menuPage__menu2 .menu--titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.menuPage__menu2 .menu--titre img {
+  max-width: 20vw;
+  width: fit-content;
+  height: auto;
+  flex: auto;
+}
+
+.menuPage__menu2 .menu--titre li:last-child > img {
+  transform: scaleX(-1);
+}
+
+.menuPage__menu2 .menu--titre li:nth-last-child(2) {
+  flex: auto;
 }
 
 .menuPage__menu2 .menu--titre h3 {
   display: block;
-  flex: 2;
+  flex: 1;
   text-align: center;
   position: relative;
   margin-left: 2%;
@@ -907,44 +977,6 @@ main .menuPage__menu1 .blocTitre__bottom img {
   opacity: 0.7;
 }
 
-.menuPage__menu2 .blocTitre {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 400px;
-}
-
-@media screen and (max-width: 992px) {
-  .menuPage__menu2 .blocTitre {
-    height: 30vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .menuPage__menu2 .blocTitre {
-    height: 18vh;
-  }
-}
-
-.menuPage__menu2 .blocTitre h2 {
-  font-family: "Croissant One";
-  font-size: 4.5rem;
-  text-align: center;
-  margin: auto;
-}
-
-@media screen and (max-width: 992px) {
-  .menuPage__menu2 .blocTitre h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 992px) and (max-width: 576px) {
-  .menuPage__menu2 .blocTitre h2 {
-    font-size: 1.60714rem;
-  }
-}
-
 .menuPage__menu2 .entree,
 .menuPage__menu2 .plat,
 .menuPage__menu2 .dessert {
@@ -960,29 +992,6 @@ main .menuPage__menu1 .blocTitre__bottom img {
   line-height: 1.4;
 }
 
-.menuPage__menu2 .menu--titre {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-.menuPage__menu2 .menu--titre img {
-  max-width: 20vw;
-  width: fit-content;
-  height: auto;
-  flex: auto;
-}
-
-.menuPage__menu2 .menu--titre li:last-child > img {
-  transform: scaleX(-1);
-}
-
-.menuPage__menu2 .menu--titre li:nth-last-child(2) {
-  flex: auto;
-}
-
 .menuPage__menu2 .entree__menu,
 .menuPage__menu2 .plat__menu {
   display: flex;
@@ -995,7 +1004,6 @@ main .menuPage__menu1 .blocTitre__bottom img {
 
 .menuPage__menu2 .entree__menu li:last-child,
 .menuPage__menu2 .plat__menu li:last-child {
-  margin-left: 3%;
   flex: 0.5 0 10px;
   text-align: center;
 }
@@ -1030,18 +1038,18 @@ main .menuPage__menu1 .blocTitre__bottom img {
 }
 
 .menuPage__menu2 .menu--titre {
-  font-size: 1.30435rem;
+  font-size: 1.13043rem;
 }
 
 @media screen and (max-width: 992px) {
   .menuPage__menu2 .menu--titre {
-    font-size: 0.83333rem;
+    font-size: 0.72222rem;
   }
 }
 
 @media screen and (max-width: 576px) {
   .menuPage__menu2 .menu--titre {
-    font-size: 0.45455rem;
+    font-size: 0.39394rem;
   }
 }
 
@@ -1169,33 +1177,94 @@ main .legende {
   background-color: #f9f9f9;
   box-shadow: 0 0 25px silver;
   width: 65vw;
-  height: 1500px;
+  height: 190vh;
   margin: auto auto 15% auto;
   padding: 5%;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: black;
 }
 
 @media screen and (max-width: 992px) {
   .menuPage__menu3 {
-    font-size: 1rem;
-    height: 100vh;
+    font-size: 0.86667rem;
+    height: 80vh;
   }
 }
 
 @media screen and (max-width: 576px) {
   .menuPage__menu3 {
-    font-size: 0.6rem;
+    font-size: 0.52rem;
     width: 70vw;
-    height: 50px;
-    position: relative;
+    height: 80vh;
   }
+}
+
+.menuPage__menu3 .blocTitre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  .menuPage__menu3 .blocTitre {
+    height: 18vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menuPage__menu3 .blocTitre {
+    height: 18vh;
+  }
+}
+
+.menuPage__menu3 .blocTitre h2 {
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .menuPage__menu3 .blocTitre h2 {
+    font-size: 2.22222rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 576px) {
+  .menuPage__menu3 .blocTitre h2 {
+    font-size: 1.42857rem;
+  }
+}
+
+.menuPage__menu3 .menu--titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.menuPage__menu3 .menu--titre img {
+  max-width: 20vw;
+  width: fit-content;
+  height: auto;
+  flex: auto;
+}
+
+.menuPage__menu3 .menu--titre li:last-child > img {
+  transform: scaleX(-1);
+}
+
+.menuPage__menu3 .menu--titre li:nth-last-child(2) {
+  flex: auto;
 }
 
 .menuPage__menu3 .menu--titre h3 {
   display: block;
-  flex: 2;
+  flex: 1;
   text-align: center;
   position: relative;
   margin-left: 2%;
@@ -1222,44 +1291,6 @@ main .legende {
   opacity: 0.7;
 }
 
-.menuPage__menu3 .blocTitre {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 400px;
-}
-
-@media screen and (max-width: 992px) {
-  .menuPage__menu3 .blocTitre {
-    height: 30vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .menuPage__menu3 .blocTitre {
-    height: 18vh;
-  }
-}
-
-.menuPage__menu3 .blocTitre h2 {
-  font-family: "Dancing Script";
-  font-size: 4.5rem;
-  text-align: center;
-  margin: auto;
-}
-
-@media screen and (max-width: 992px) {
-  .menuPage__menu3 .blocTitre h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 992px) and (max-width: 576px) {
-  .menuPage__menu3 .blocTitre h2 {
-    font-size: 1.60714rem;
-  }
-}
-
 .menuPage__menu3 .entree,
 .menuPage__menu3 .plat,
 .menuPage__menu3 .dessert {
@@ -1275,29 +1306,6 @@ main .legende {
   line-height: 1.4;
 }
 
-.menuPage__menu3 .menu--titre {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-.menuPage__menu3 .menu--titre img {
-  max-width: 20vw;
-  width: fit-content;
-  height: auto;
-  flex: auto;
-}
-
-.menuPage__menu3 .menu--titre li:last-child > img {
-  transform: scaleX(-1);
-}
-
-.menuPage__menu3 .menu--titre li:nth-last-child(2) {
-  flex: auto;
-}
-
 .menuPage__menu3 .entree__menu,
 .menuPage__menu3 .plat__menu {
   display: flex;
@@ -1310,7 +1318,6 @@ main .legende {
 
 .menuPage__menu3 .entree__menu li:last-child,
 .menuPage__menu3 .plat__menu li:last-child {
-  margin-left: 3%;
   flex: 0.5 0 10px;
   text-align: center;
 }
@@ -1450,33 +1457,94 @@ main .legende {
   background-color: #fdfffd;
   box-shadow: 0 0 25px silver;
   width: 65vw;
-  height: 1500px;
+  height: 190vh;
   margin: auto auto 15% auto;
   padding: 5%;
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: black;
 }
 
 @media screen and (max-width: 992px) {
   .menuPage__menu4 {
-    font-size: 1rem;
-    height: 100vh;
+    font-size: 0.86667rem;
+    height: 80vh;
   }
 }
 
 @media screen and (max-width: 576px) {
   .menuPage__menu4 {
-    font-size: 0.6rem;
+    font-size: 0.52rem;
     width: 70vw;
-    height: 50px;
-    position: relative;
+    height: 80vh;
   }
+}
+
+.menuPage__menu4 .blocTitre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  .menuPage__menu4 .blocTitre {
+    height: 18vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menuPage__menu4 .blocTitre {
+    height: 18vh;
+  }
+}
+
+.menuPage__menu4 .blocTitre h2 {
+  font-family: "Kaushan Script";
+  font-size: 4rem;
+  text-align: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .menuPage__menu4 .blocTitre h2 {
+    font-size: 2.22222rem;
+  }
+}
+
+@media screen and (max-width: 992px) and (max-width: 576px) {
+  .menuPage__menu4 .blocTitre h2 {
+    font-size: 1.42857rem;
+  }
+}
+
+.menuPage__menu4 .menu--titre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.menuPage__menu4 .menu--titre img {
+  max-width: 20vw;
+  width: fit-content;
+  height: auto;
+  flex: auto;
+}
+
+.menuPage__menu4 .menu--titre li:last-child > img {
+  transform: scaleX(-1);
+}
+
+.menuPage__menu4 .menu--titre li:nth-last-child(2) {
+  flex: auto;
 }
 
 .menuPage__menu4 .menu--titre h3 {
   display: block;
-  flex: 2;
+  flex: 1;
   text-align: center;
   position: relative;
   margin-left: 2%;
@@ -1503,44 +1571,6 @@ main .legende {
   opacity: 0.7;
 }
 
-.menuPage__menu4 .blocTitre {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 400px;
-}
-
-@media screen and (max-width: 992px) {
-  .menuPage__menu4 .blocTitre {
-    height: 30vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .menuPage__menu4 .blocTitre {
-    height: 18vh;
-  }
-}
-
-.menuPage__menu4 .blocTitre h2 {
-  font-family: "Kaushan Script";
-  font-size: 4.5rem;
-  text-align: center;
-  margin: auto;
-}
-
-@media screen and (max-width: 992px) {
-  .menuPage__menu4 .blocTitre h2 {
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 992px) and (max-width: 576px) {
-  .menuPage__menu4 .blocTitre h2 {
-    font-size: 1.60714rem;
-  }
-}
-
 .menuPage__menu4 .entree,
 .menuPage__menu4 .plat,
 .menuPage__menu4 .dessert {
@@ -1556,29 +1586,6 @@ main .legende {
   line-height: 1.4;
 }
 
-.menuPage__menu4 .menu--titre {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-.menuPage__menu4 .menu--titre img {
-  max-width: 20vw;
-  width: fit-content;
-  height: auto;
-  flex: auto;
-}
-
-.menuPage__menu4 .menu--titre li:last-child > img {
-  transform: scaleX(-1);
-}
-
-.menuPage__menu4 .menu--titre li:nth-last-child(2) {
-  flex: auto;
-}
-
 .menuPage__menu4 .entree__menu,
 .menuPage__menu4 .plat__menu {
   display: flex;
@@ -1591,7 +1598,6 @@ main .legende {
 
 .menuPage__menu4 .entree__menu li:last-child,
 .menuPage__menu4 .plat__menu li:last-child {
-  margin-left: 3%;
   flex: 0.5 0 10px;
   text-align: center;
 }
