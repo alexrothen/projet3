@@ -50,8 +50,8 @@
     }
 }
 
-.menu__clique {
-    &:hover {
+a {
+    &:hover >.menu__clique {
 
         animation: menu 200ms ease-in-out both;
     }

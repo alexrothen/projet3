@@ -1,7 +1,6 @@
-main {
+.body__page {
     @include legende;
-
-
+    
     .menuPage__menu1 {
         @include menuPage(menu1);
 

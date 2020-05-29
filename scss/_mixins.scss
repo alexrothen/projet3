@@ -95,7 +95,7 @@
     padding: 5%;
     font-size: map-get($font-size, texte);
     @include tablet{
-        font-size: map-get($font-size,texte)/1.5;
+        font-size: map-get($font-size,texte)/1.4;
         // height: 130vh;
         max-height: 1000px;
 
@@ -147,9 +147,12 @@
             margin-bottom: 5%;
             img{
                 max-width: 20vw;
-                width: fit-content;
+                width: 100%;
                 height: auto;
                 flex: auto;
+            }
+            li{
+                width: 30%;
             }
             li:last-child> img{
                 transform: scaleX(-1);
