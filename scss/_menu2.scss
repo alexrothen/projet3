@@ -8,10 +8,10 @@
         @include radient(menu2);   
         font-size: map-get($font-size,menu)*1.1;
         @include tablet {
-             font-size: map-get($font-size,menu)/1.6;
+             font-size: 2.3rem;
             }
         @include mobile{
-            font-size: map-get($font-size,menu)/2.5;
+            font-size: 1.2rem;
             }    
     }
 

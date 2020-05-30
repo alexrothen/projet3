@@ -122,9 +122,9 @@
             font-family: map-get($font-family, $menu);
             font-size: map-get($font-size,titreMenu);
             @include tablet{
-                font-size: map-get($font-size,titreMenu)/1.8;
+                font-size: map-get($font-size,titreMenu)/1.2;
                 @include mobile{
-                    font-size: map-get($font-size,titreMenu)/2.8;
+                    font-size: map-get($font-size,titreMenu)/2.2;
                 }   
                 
             }
