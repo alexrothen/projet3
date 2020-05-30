@@ -93,11 +93,12 @@
     padding: 5%;
     font-size: map-get($font-size, texte);
     @include tablet{
-        font-size: map-get($font-size,texte)/1.4;
+        font-size: map-get($font-size,texte)/1.7;
         max-height: 1000px;
+        width: 70vw;
     };
     @include mobile{
-        font-size: map-get($font-size,texte)/2.5;
+        font-size: map-get($font-size,texte)/3.8;
         width: 70vw;
         max-height: 550px;
     }
@@ -122,9 +123,9 @@
             font-family: map-get($font-family, $menu);
             font-size: map-get($font-size,titreMenu);
             @include tablet{
-                font-size: map-get($font-size,titreMenu)/1.2;
+                font-size: map-get($font-size,titreMenu)/1.4;
                 @include mobile{
-                    font-size: map-get($font-size,titreMenu)/2.2;
+                    font-size: map-get($font-size,titreMenu)/1.4;
                 }   
                 
             }
