@@ -20,7 +20,6 @@
  
 
     @include tablet{
-        // width: 35vw;
         max-width: 260px;
         // height: 50vh;
         height: 350px;
@@ -96,14 +95,12 @@
     font-size: map-get($font-size, texte);
     @include tablet{
         font-size: map-get($font-size,texte)/1.4;
-        // height: 130vh;
         max-height: 1000px;
-
     };
     @include mobile{
         font-size: map-get($font-size,texte)/2.5;
         width: 70vw;
-        height: 550px;
+        max-height: 600px;
     }
     .blocTitre {
 
