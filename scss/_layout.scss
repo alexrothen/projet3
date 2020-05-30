@@ -30,12 +30,9 @@ html {
 
         @include tablet {
             height: 1400px;
-        }
-
-        ;
-
+        };
         @include mobile {
-            height: 135vh;
+            height: 800px;
         }
     }
 
@@ -113,12 +110,9 @@ html {
         grid-template-columns: 1fr 1fr;
 
         @include tablet {
-
             width: 80vw;
             max-height: 850px;
-        }
-
-        ;
+        };
 
         @include mobile {
             height: 70vh;
