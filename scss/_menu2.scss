@@ -6,25 +6,22 @@
 
         h2 {
             @include radient(menu2);
-            font-size: map-get($font-size,menuPage__titre)/1.7;
+            font-size: map-get($font-size,menuPage__titre)/1.4;
         }
     }
 
     .entree, .plat, .dessert{
         
         .menu--titre {
-            h3{
-            font-size: map-get($font-size,menuPage__categ)/1.2;
-
-            }
+           
             li:nth-child(1), li:nth-child(3){
-                width: 23%;
+                width: 25%;
                 
             }
        } 
   }
   .entree__menu, .plat__menu, .dessert__menu{
-    // font-size: map-get($font-size,menuPage__texte)/1.2;
+    font-size: map-get($font-size,menuPage__texte)/1.3;
 
   }
 

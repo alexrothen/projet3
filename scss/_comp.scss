@@ -16,6 +16,7 @@
  
     .menu1 {
         @include menu(menu1);
+        grid-area: menu1;
 
         p{
            margin-top: 0;
@@ -35,7 +36,7 @@
 
     .menu2 {
         @include menu(menu2);
-       
+        grid-area: menu2;
         p {
             @include radient(menu2);
             font-size: map-get($font-size,menu)/1.4;
@@ -67,7 +68,7 @@
 
     .menu3 {
         @include menu(menu3);
-
+        grid-area: menu3;
 
         p{
             @include radient(menu3);
@@ -80,6 +81,8 @@
 
     .menu4 {
         @include menu(menu4);
+        grid-area: menu4;
+
 
         p{
             @include radient(menu4);

@@ -113,6 +113,8 @@ html {
         align-content: space-evenly;
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
+        grid-template-areas: "menu1 menu2"
+                             "menu3 menu4";
 
         @include tablet {
             width: 80vw;
@@ -128,8 +130,7 @@ html {
         }
 
         ;
-        grid-template-areas: "menu1 menu2"
-        "menu3 menu4";
+       
     }
 
     .menu {
