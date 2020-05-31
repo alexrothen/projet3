@@ -57,18 +57,7 @@
                     font-family: map-get($font-family, menu1);
                     margin: 0;
                     margin-left: 2%;
-                    font-size: map-get($font-size,texte)*2;
-                    @include tablet
-                    {
-                        font-size: map-get($font-size,texte)*1.1;
-
-                    }
-                    @include mobile{
-                        font-size: map-get($font-size,texte)*1.1;
-
-                    }
-                
-
+                    font-size: map-get($font-size,menuPage__titre)/1.5;
                 }
             }
 

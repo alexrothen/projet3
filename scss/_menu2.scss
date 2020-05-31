@@ -1,38 +1,39 @@
-
-        
 .menuPage__menu2 {
     @include menuPage(menu2);
-    .blocTitre{
-       
-        h2{
-        @include radient(menu2);   
-        font-size: map-get($font-size,menu)*1.1;
-        @include tablet {
-             font-size: 2.3rem;
-            }
-        @include mobile{
-            font-size: 0.9rem;
-            }    
+
+
+    .blocTitre {
+
+        h2 {
+            @include radient(menu2);
+            font-size: map-get($font-size,menuPage__titre)/1.7;
+        }
     }
 
-    }
-   
     .entree, .plat, .dessert{
-        li, h3{
-            font-size: map-get($font-size,texte)/1.3;
-             @include tablet{
-            font-size: map-get($font-size,texte)/2;
-  
-        }
-        @include mobile{
-            font-size: map-get($font-size,texte)/2.4;
-  
-        }
-        }
-    }
+        
+        .menu--titre {
+            h3{
+            font-size: map-get($font-size,menuPage__categ)/1.2;
+
+            }
+            li:nth-child(1), li:nth-child(3){
+                width: 23%;
+                
+            }
+       } 
+  }
+  .entree__menu, .plat__menu, .dessert__menu{
+    font-size: map-get($font-size,menuPage__texte)/1.25;
+
+  }
+
+
     .entree {
         color: map-get($text-color, entree__menu2);
+
         .menu--titre {
+           
             h3 {
                 display: block;
                 flex: 2;
@@ -41,8 +42,8 @@
                 margin-left: 2%;
                 margin-right: 2%;
                 margin-block-start: 0;
-                 margin-block-end: 0;
-               
+                margin-block-end: 0;
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -50,18 +51,18 @@
                     border-radius: 50%;
                     width: 1px;
                     height: 0.15rem;
-                    transition: all 180ms 20ms cubic-bezier(.56,.93,1,.58);
+                    transition: all 180ms 20ms cubic-bezier(.56, .93, 1, .58);
                     opacity: 0;
-                    background-color: map-get($text-color,entree__menu2);
+                    background-color: map-get($text-color, entree__menu2);
                     left: 0;
                 }
             }
-         
+
             h3 {
-        
+
 
                 &:hover {
-                 
+
                     &::after {
                         width: 100%;
                         opacity: 0.7;
@@ -72,8 +73,9 @@
 
     }
 
-    .plat{
+    .plat {
         color: map-get($text-color, plat__menu2);
+
         .menu--titre {
             h3 {
                 display: block;
@@ -83,8 +85,8 @@
                 margin-left: 2%;
                 margin-right: 2%;
                 margin-block-start: 0;
-                 margin-block-end: 0;
-               
+                margin-block-end: 0;
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -92,18 +94,18 @@
                     border-radius: 50%;
                     width: 1px;
                     height: 0.15rem;
-                    transition: all 180ms 20ms cubic-bezier(.56,.93,1,.58);
+                    transition: all 180ms 20ms cubic-bezier(.56, .93, 1, .58);
                     opacity: 0;
-                    background-color: map-get($text-color,plat__menu2);
+                    background-color: map-get($text-color, plat__menu2);
                     left: 0;
                 }
             }
-         
+
             h3 {
-        
+
 
                 &:hover {
-                 
+
                     &::after {
                         width: 100%;
                         opacity: 0.7;
@@ -114,8 +116,9 @@
 
     }
 
-    .dessert{
+    .dessert {
         color: map-get($text-color, dessert__menu2);
+
         .menu--titre {
             h3 {
                 display: block;
@@ -125,8 +128,8 @@
                 margin-left: 2%;
                 margin-right: 2%;
                 margin-block-start: 0;
-                 margin-block-end: 0;
-               
+                margin-block-end: 0;
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -134,27 +137,25 @@
                     border-radius: 50%;
                     width: 1px;
                     height: 0.15rem;
-                    transition: all 180ms 20ms cubic-bezier(.56,.93,1,.58);
+                    transition: all 180ms 20ms cubic-bezier(.56, .93, 1, .58);
                     opacity: 0;
-                    background-color: map-get($text-color,dessert__menu2);
+                    background-color: map-get($text-color, dessert__menu2);
                     left: 0;
                 }
             }
-         
+
             h3 {
-        
+
 
                 &:hover {
-                 
+
                     &::after {
                         width: 100%;
                         opacity: 0.7;
                     }
                 }
             }
-        }}
+        }
+    }
 
 }
-
-    
-    
