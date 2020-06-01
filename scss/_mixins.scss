@@ -89,6 +89,7 @@
     box-shadow: 0 0 25px lighten(grey, 25%);
     width: 65vw;
     max-height: 1650px;
+    max-width: 1080px;
     margin: auto auto 15% auto;
     padding: 5%;
     font-size: map-get($font-size, menuPage);

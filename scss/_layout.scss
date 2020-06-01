@@ -31,7 +31,7 @@ html {
     }
 
     .body__page {
-        height: 1600px;
+        max-height: 2000px;
 
         @include tablet {
             height: 1400px;
