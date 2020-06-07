@@ -29,7 +29,8 @@ main {
 
 
     }
-    .entree{
+
+    .entree {
         .menu--titre {
             h3 {
                 display: block;
@@ -39,8 +40,8 @@ main {
                 margin-left: 2%;
                 margin-right: 2%;
                 margin-block-start: 0;
-                 margin-block-end: 0;
-               
+                margin-block-end: 0;
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -48,18 +49,18 @@ main {
                     border-radius: 50%;
                     width: 1px;
                     height: 0.15rem;
-                    transition: all 180ms 20ms cubic-bezier(.56,.93,1,.58);
+                    transition: all 180ms 20ms cubic-bezier(.56, .93, 1, .58);
                     opacity: 0;
-                    background-color: map-get($text-color,entree__menu3);
+                    background-color: map-get($text-color, entree__menu3);
                     left: 0;
                 }
             }
-         
+
             h3 {
-        
+
 
                 &:hover {
-                 
+
                     &::after {
                         width: 100%;
                         opacity: 0.7;
@@ -68,6 +69,7 @@ main {
             }
         }
     }
+
     .plat {
         .menu--titre {
             h3 {
@@ -78,8 +80,8 @@ main {
                 margin-left: 2%;
                 margin-right: 2%;
                 margin-block-start: 0;
-                 margin-block-end: 0;
-               
+                margin-block-end: 0;
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -87,18 +89,18 @@ main {
                     border-radius: 50%;
                     width: 1px;
                     height: 0.15rem;
-                    transition: all 180ms 20ms cubic-bezier(.56,.93,1,.58);
+                    transition: all 180ms 20ms cubic-bezier(.56, .93, 1, .58);
                     opacity: 0;
-                    background-color: map-get($text-color,plat__menu3);
+                    background-color: map-get($text-color, plat__menu3);
                     left: 0;
                 }
             }
-         
+
             h3 {
-        
+
 
                 &:hover {
-                 
+
                     &::after {
                         width: 100%;
                         opacity: 0.7;
@@ -118,8 +120,8 @@ main {
                 margin-left: 2%;
                 margin-right: 2%;
                 margin-block-start: 0;
-                 margin-block-end: 0;
-               
+                margin-block-end: 0;
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -127,18 +129,19 @@ main {
                     border-radius: 50%;
                     width: 1px;
                     height: 0.15rem;
-                    transition: all 180ms 20ms cubic-bezier(.56,.93,1,.58);
+                    transition: all 180ms 20ms cubic-bezier(.56, .93, 1, .58);
                     opacity: 0;
-                    background-color: map-get($text-color,dessert__menu3);
+                    background-color: map-get($text-color, dessert__menu3);
                     left: 0;
                 }
-                
+
             }
+
             h3 {
-        
+
 
                 &:hover {
-                 
+
                     &::after {
                         width: 100%;
                         opacity: 0.7;
@@ -146,7 +149,7 @@ main {
                 }
             }
 
-          
+
         }
 
         .dessert__menu {

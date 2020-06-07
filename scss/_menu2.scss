@@ -6,31 +6,37 @@
 
         h2 {
             @include radient(menu2);
-            font-size: map-get($font-size,menuPage__titre)/1.4;
+            font-size: map-get($font-size, menuPage__titre)/1.4;
         }
     }
 
-    .entree, .plat, .dessert{
-        
-        .menu--titre {
-           
-            li:nth-child(1), li:nth-child(3){
-                width: 25%;
-                
-            }
-       } 
-  }
-  .entree__menu, .plat__menu, .dessert__menu{
-    font-size: map-get($font-size,menuPage__texte)/1.25;
+    .entree,
+    .plat,
+    .dessert {
 
-  }
+        .menu--titre {
+
+            li:nth-child(1),
+            li:nth-child(3) {
+                width: 25%;
+
+            }
+        }
+    }
+
+    .entree__menu,
+    .plat__menu,
+    .dessert__menu {
+        font-size: map-get($font-size, menuPage__texte)/1.25;
+
+    }
 
 
     .entree {
         color: map-get($text-color, entree__menu2);
 
         .menu--titre {
-           
+
             h3 {
                 display: block;
                 flex: 2;

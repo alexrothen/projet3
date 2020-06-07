@@ -1,6 +1,6 @@
 .body__page {
     @include legende;
-    
+
     .menuPage__menu1 {
         @include menuPage(menu1);
 
@@ -57,13 +57,14 @@
                     font-family: map-get($font-family, menu1);
                     margin: 0;
                     margin-left: 2%;
-                    font-size: map-get($font-size,menuPage__titre)/1.5;
+                    font-size: map-get($font-size, menuPage__titre)/1.5;
                 }
             }
 
             li {
                 display: contents;
                 flex: 1;
+
                 img {
                     max-width: 6%;
                 }

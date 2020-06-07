@@ -1,12 +1,14 @@
 html {
     font-size: 11.5px;
-    @include tablet{
+
+    @include tablet {
         font-size: 13.5px;
     }
-    @include mobile{
+
+    @include mobile {
         font-size: 14.5px;
     }
-  
+
     body {
         margin: 0;
         padding: 0;
@@ -23,6 +25,7 @@ html {
         @include tablet {
             height: 1200px;
         }
+
         ;
 
         @include mobile {
@@ -35,7 +38,10 @@ html {
 
         @include tablet {
             height: 1400px;
-        };
+        }
+
+        ;
+
         @include mobile {
             height: 700px;
         }
@@ -43,21 +49,24 @@ html {
 
     .body__mentions {
         margin: auto;
+
         h3 {
             margin-top: 5%;
         }
-        h2{
+
+        h2 {
             font-size: 2.2rem;
             text-align: center;
             margin: 8%;
 
         }
+
         >* {
             padding: 0 5% 0 5%;
 
         }
     }
-    
+
 
     header {
         display: flex;
@@ -103,42 +112,6 @@ html {
         }
     }
 
-    .blocMenu {
-        display: grid;
-        width: 80vw;
-        max-width: 110vw;
-        margin: auto;
-        height: 1400px;
-        justify-items: center;
-        align-content: space-evenly;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "menu1 menu2"
-                             "menu3 menu4";
-
-        @include tablet {
-            width: 80vw;
-            max-height: 850px;
-        };
-
-        @include mobile {
-            height: 70vh;
-            width: 90vw;
-
-
-
-        }
-
-        ;
-       
-    }
-
-    .menu {
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-
     footer {
 
         height: 80px;
@@ -174,8 +147,6 @@ html {
                 @include mobile {
                     font-size: map-get($font-size, footer)/2.2;
                 }
-
-
             }
         }
 

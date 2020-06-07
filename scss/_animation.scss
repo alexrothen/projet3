@@ -51,7 +51,7 @@
 }
 
 a {
-    &:hover >.menu__clique {
+    &:hover>.menu__clique {
 
         animation: menu 200ms ease-in-out both;
     }
@@ -123,10 +123,8 @@ footer a {
 
 .menu--titre {
     h3 {
-        
-
         &:hover {
-         
+
             &::after {
                 width: 100%;
                 opacity: 0.8;
