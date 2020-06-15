@@ -92,7 +92,7 @@
     max-height: 1650px;
     max-width: 1000px;
     margin: auto auto 15% auto;
-    padding: 5%;
+    padding: 8%;
     font-size: map-get($font-size, menuPage);
 
     @include tablet {
@@ -213,7 +213,7 @@
     .entree__menu,
     .plat__menu,
     .dessert__menu {
-        padding: 0 8% 0 8%;
+        padding: 0 7% 0 7%;
         font-size: map-get($font-size, menuPage__texte);
     }
 }
