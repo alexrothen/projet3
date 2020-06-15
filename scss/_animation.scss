@@ -121,14 +121,3 @@ footer a {
     }
 }
 
-.menu--titre {
-    h3 {
-        &:hover {
-
-            &::after {
-                width: 100%;
-                opacity: 0.8;
-            }
-        }
-    }
-}

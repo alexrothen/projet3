@@ -16,13 +16,49 @@
     }
 
     ul {
-        display: flex;
         font-family: map-get($font-family, menu1titre);
         font-weight: 300;
 
         list-style-type: none;
 
 
+    }
+    .menu--titre {
+        h3 {
+            display: block;
+            flex: 2;
+            text-align: center;
+            position: relative;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-block-start: 0;
+            margin-block-end: 0;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                border-radius: 50%;
+                width: 1px;
+                height: 0.15rem;
+                transition: all 180ms 20ms cubic-bezier(.56, .93, 1, .58);
+                opacity: 0;
+                background-color: map-get($text-color, menu4);
+                left: 0;
+            }
+        }
+
+        h3 {
+
+
+            &:hover {
+
+                &::after {
+                    width: 100%;
+                    opacity: 0.7;
+                }
+            }
+        }
     }
 
     .dessert {

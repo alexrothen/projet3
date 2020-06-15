@@ -1,5 +1,5 @@
 html {
-    font-size: 12px;
+    font-size: 11.5px;
 
     @include tablet {
         font-size: 14px;
@@ -49,6 +49,7 @@ html {
 
     .body__mentions {
         margin: auto;
+        padding-bottom: 5%;
 
         h3 {
             margin-top: 5%;
