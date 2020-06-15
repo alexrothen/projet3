@@ -40,12 +40,10 @@
 
 @mixin radient ($menu) {
     background: map-get($radient-text, $menu);
-    background-clip: text;
     border: transparent;
     color: transparent;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     -text-fill-color: transparent;
@@ -188,7 +186,7 @@
     }
 
     ul {
-        padding-inline-start: 0px;
+        // padding-inline-start: 0px;
         list-style-type: none;
     }
 
