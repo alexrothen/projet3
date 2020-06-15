@@ -10,7 +10,7 @@
 .blocMenu {
     display: grid;
     width: 80vw;
-    max-width: 110vw;
+    max-width: 1200px;
     margin: auto;
     height: 1400px;
     justify-items: center;
@@ -28,7 +28,7 @@
     ;
 
     @include mobile {
-        height: 70vh;
+        height: 72vh;
         width: 90vw;
 
 
@@ -162,14 +162,15 @@ p,ul {
     }
 
     @include mobile {
-        height: 10vh;
+        height: 8vh;
     }
 
 
     .blocProch {
         display: flex;
         flex-direction: row;
-        width: 35vw;
+        width: 40vw;
+        height: 60px;
         max-width: 500px;
         justify-content: center;
         align-items: center;
@@ -177,13 +178,14 @@ p,ul {
         border-radius: 15px;
 
         @include tablet {
-            height: 60px;
+            height: 50px;
         }
 
         @include mobile {
-            height: 5vh;
+            height: 4vh;
             border-radius: 10px;
-            width: 50vw;
+            min-width: 160px;
+            max-width: 45vw;
         }
 
 
@@ -201,12 +203,12 @@ p,ul {
                 width: fit-content;
 
                 @include tablet {
-                    font-size: map-get($font-size, prochainement)/1.5;
+                    font-size: map-get($font-size, prochainement)/1.4;
 
                 }
 
                 @include mobile {
-                    font-size: map-get($font-size, prochainement)/2.4;
+                    font-size: map-get($font-size, prochainement)/2.5;
 
                 }
 
